@@ -1,2 +1,56 @@
 /* daylight cards overlapping
    (position absolute and flexbox) */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #efc1c1;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  padding: 1em;
+  color: #7c8ebd;
+  background-color: #c3c3d9;
+  box-shadow: 1em 1em 5em #555555;
+}
+article h1 {
+  order: 1;
+}
+article h1 + p {
+  margin-bottom: 10em;
+}
+article h1 + p::before {
+  content: '';
+  display: inline-block;
+  background-color: currentColor;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+.time-sunrise-to-sunset {
+  display: flex;
+  justify-content: space-between;
+}
+.time-current {
+  border-bottom: 1px solid;
+  padding-bottom: 1em;
+}
+.time-current::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+article + article {
+  position: relative;
+  top: -5em;
+  left: -2em;
+  color: #ed8f55;
+  background-color: #e8e8bf;
+}
