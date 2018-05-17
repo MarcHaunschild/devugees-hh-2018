@@ -49,7 +49,8 @@ nav ul li a {
 main {
   display: flex;
   flex-wrap: wrap;
-  margin: 1em;
+  width: 60em;
+  margin: 1em auto;
   border-style:double;
   border-width: 15px;
   border-color: white;
@@ -67,9 +68,10 @@ main h1 {
 }
 
 main article {
-  width: 31.25em;
-  max-width: 100%;
-  margin: 1em auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15em;
+  margin: 1em;
   border-left-width: 5px;
   border-left-style: solid;
   border-left-color: lime;
