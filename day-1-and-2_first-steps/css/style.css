@@ -1,0 +1,33 @@
+* { /* Universal Selector */
+  color: green;
+}
+body { /* element selector */
+  background-color: #ff9999;
+}
+main p { /* descendant selector */
+  color: red;
+}
+p {
+  font-style: normal;
+}
+/* Pseudoclass nth-of-type with keyword "even" */
+nav ul li:nth-of-type(even) {
+  background-color: white;
+}
+/* Attribute Selector */
+nav li[aria-current="page"] {
+  font-weight: bold;
+}
+
+
+
+
+main > article { /* child selector */
+  background-color: rgba(255,255,255, 0.5);
+}
+main > article:nth-child(2) { /* child selector */
+  background-color: #ffffff;
+}
+main > article:nth-child(4) { /* child selector */
+  background-color: rgb(255,255,255);
+}
