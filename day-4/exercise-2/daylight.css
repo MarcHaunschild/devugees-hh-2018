@@ -36,12 +36,17 @@ article h1 + p::before {
   justify-content: space-between;
 }
 .time-current {
+  position: relative;
   border-bottom: 1px solid;
   padding-bottom: 1em;
+  overflow: hidden;
 }
 .time-current::before {
   content: '';
   display: inline-block;
+  position: absolute;
+  left: 3em;
+  top: 1.625em;
   width: 1em;
   height: 1em;
   border-radius: 50%;
