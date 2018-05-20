@@ -64,7 +64,7 @@ nav ul li a {
 main {
   display: flex;
   flex-wrap: wrap;
-  width: 60em;
+  max-width: 60em;
   margin: 1em auto;
   border-style:double;
   border-width: 15px;
