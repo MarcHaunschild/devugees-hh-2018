@@ -1,0 +1,113 @@
+/*
+
+    Table of contents
+    - - - - - - - - - - - -
+
+    1. General Styling
+    2. Header
+    3. Nav area
+    4.
+
+*/
+
+
+/* ==========================
+   General styling
+   ========================== */
+
+* {
+  box-sizing: border-box;
+}
+:focus {
+  background-color: wheat;
+}
+
+/* ==========================
+   Header
+   ========================== */
+
+header img {
+  float: right;
+  width: 20vw;
+  height: auto;
+  margin: 1em 0 1em 1em
+}
+header p {
+  margin-right: 25vw;
+}
+
+/* ==========================
+   nav area
+   ========================== */
+
+nav {
+  clear: both;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; /* for IE */
+}
+nav li {
+  /* shorthand notation flex-grow, flex-shrink
+     and flex-basis (base size) */
+  flex: 1 1 auto;
+}
+nav a {
+  display: block;
+  padding: 1em;
+  border-left: 5px solid white;
+  text-align: center;
+  color: white;
+  background: #380BE2;
+  text-decoration: none;
+}
+nav li:first-child a {
+  border: none;
+}
+nav a:focus,
+nav a:hover {
+  color: #380BE2;
+  background: wheat;
+}
+nav a[aria-current="page"] {
+  background: black;
+}
+
+/* ==========================
+   main content
+   ========================== */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main > * {
+  flex: 1 1 15em;
+  margin: 1em;
+  padding: 1em;
+  background: #eee;
+}
+main > .jumbotron {
+  flex: 0 1 100%;
+  padding: 3em;
+  background: #ddd;
+}
+main > .jumbotron ~ * {
+  background: #eeffee;
+}
+
+/* ==========================
+   footer
+   ========================== */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  justify-content: space-between;
+}
+footer :last-child {
+  text-align: right
+}
