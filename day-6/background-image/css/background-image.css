@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
 }
-body {
-
+body {  min-height: 100vh;
+  background-image: url(../img/galaxy.jpg);
+  background-size: cover;
+  background-position: 40% 25%;
+  background-repeat: no-repeat;
 }
 h1, p {
   padding: 1rem;
