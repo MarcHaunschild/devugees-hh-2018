@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Day 7 - Text and Font Formatting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <style>
+    .font-family {
+      font-family: Helvetica, Arial, 'Lucida sans', sans-serif;
+      font-size: 1.25em;
+      font-style: italic;
+    }
+
+    .line-height {
+      line-height: 2.75;
+    }
+
+    .text-align p:nth-of-type(1) {
+      text-align: center;
+    }
+
+    .text-align p:nth-of-type(2) {
+      text-align: justify;
+    }
+
+    .text-align p:nth-of-type(3) {
+      text-align: right;
+    }
+
+    .text-decoration p:nth-of-type(1) {
+      text-decoration: line-through;
+    }
+
+    .text-decoration p:nth-of-type(2) {
+      text-decoration: overline;
+    }
+
+    .text-decoration p:nth-of-type(3) {
+      text-decoration: underline;
+    }
+
+    .text-transform p:first-of-type {
+      text-transform:uppercase;
+    }
+
+    .text-transform p:nth-of-type(2) {
+      text-transform:lowercase;
+    }
+
+    .text-transform p:nth-of-type(3) {
+      text-transform: capitalize;
+    }
+
+    .letter-spacing p:nth-of-type(1) {
+      letter-spacing: -.05em;
+    }
+
+    .letter-spacing p:nth-of-type(2) {
+      word-spacing: 2.5em;
+    }
+
+
+    /* Special Exercise */
+
+    /* How to change styles depending on the number of children */
+
+    /*
+    article {
+      background: yellow;
+    }
+    article:first-of-type:nth-last-of-type(-n+10),
+    article:first-of-type:nth-last-of-type(-n+10) ~ article {
+      background: lime;
+    }
+*/
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Text Formatting using CSS</h1>
+    <h2>Todays plan</h2>
+    <h3>Typography</h3>
+    <ul>
+      <li>font-family, font-size, font-style</li>
+      <li>line-height</li>
+      <li>text-align</li>
+      <li>text-decoration</li>
+      <li>text-transform</li>
+    </ul>
+    <p><a href="https://www.youtube.com/embed/NM2qmIPSuOg" target="_new">Chris Coyier talking Icon Fonts vs SVG (links leads you to YouTube. YouTube collects your data!)</a></p>
+  </header>
+  <main>
+    <article>
+      <h2>Intro</h2>
+      <h3>Useful links</h3>
+      <ul>
+        <li><a href="http://webtypography.net">A Site dedicated to Web typography</a></li>
+        <li>
+          <h4>
+            <a href="https://www.w3.org/Style/CSS/specs">Official CSS Spec</a>
+          </h4>
+          <ul>
+            <li><a href="https://www.w3.org/TR/css-text-3/">Text Modules Level 3</a></li>
+            <li><a href="https://www.w3.org/TR/css-fonts-3/">Fonts Module Level 3</a></li>
+            <li><a href="https://www.w3.org/TR/css-text-decor-3/">Text Decoration Module Level 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+    <article class="font-family">
+      <h2>font-family</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, atque aut iure adipisci in aliquid laudantium nobis dolorem, ut veritatis nulla enim, ipsa dolor est quae consequatur provident similique neque!</p>
+      <p>Velit cum excepturi, placeat recusandae molestiae id laboriosam illo ratione maxime maiores, quam possimus dolores sed repellat quis nobis doloribus porro quidem perferendis! Consectetur quae fugiat quos assumenda nulla, provident.</p>
+      <p>Molestiae nisi cum quod pariatur neque, nostrum recusandae totam obcaecati velit sapiente vero? Debitis unde atque sed adipisci, consectetur magni necessitatibus impedit quia eaque perferendis neque quidem alias dolorum expedita?</p>
+    </article>
+    <article class="line-height">
+      <h2>line-height</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis incidunt aliquam eius quisquam molestias sequi placeat adipisci alias necessitatibus accusantium, amet hic tempora nam ullam aspernatur nihil cupiditate accusamus, officia!</p>
+      <p>Similique doloribus aperiam tenetur natus harum nemo possimus voluptatum eveniet officia. Quod temporibus laborum quaerat rem veritatis qui ea at molestiae atque in mollitia ratione aliquam sunt, distinctio ducimus voluptates.</p>
+      <p>Rem cum, nesciunt libero, necessitatibus nam, voluptates atque facere soluta aspernatur, id eaque animi neque laborum minus assumenda. Mollitia nihil alias veritatis at eius aspernatur officiis amet sapiente laborum commodi.</p>
+    </article>
+    <article class="text-align">
+      <h2>text-align</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos qui, odio eveniet neque, sit maxime culpa modi saepe iure alias asperiores voluptatem nesciunt magni esse velit ab itaque debitis officia.</p>
+      <p>Ratione eveniet pariatur rem vel ipsum, a voluptatibus? Ad recusandae qui molestiae, animi necessitatibus nihil itaque, nesciunt laboriosam quidem, tenetur voluptatum. Nemo deleniti obcaecati, nostrum assumenda ullam nihil iste similique.</p>
+      <p>Ea, reprehenderit! Dolorum iusto porro id perferendis, quas consequatur libero, minus, delectus laborum nihil vero tempore debitis at voluptate! Voluptas maxime, harum in ipsam assumenda voluptatem explicabo dolores modi provident.</p>
+    </article>
+    <article class="text-decoration">
+      <h2>text-decoration</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vitae explicabo natus facilis incidunt vel non impedit numquam accusamus optio earum, delectus eum, ipsum facere, veritatis assumenda, reiciendis nulla magni.</p>
+      <p>Illo optio assumenda, natus nostrum est vero odio. Ea laudantium eaque officiis minima placeat tempore illum perferendis minus, fuga, esse? Aliquid aperiam assumenda blanditiis sunt voluptates quasi nulla velit totam.</p>
+      <p>Dolore cupiditate quae soluta fuga repellat, eligendi illo! Odio doloremque, eveniet. Sunt rerum natus illum aperiam, modi tempore, magnam, ex deserunt atque omnis hic tenetur nesciunt incidunt consequuntur rem vero.</p>
+    </article>
+    <article class="text-transform">
+      <h2>text-transform</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed exercitationem tempore molestias aperiam et vel possimus dolores ducimus modi eos dolor qui itaque quod, maxime architecto praesentium, magnam excepturi eligendi.</p>
+      <p>Asperiores facere, similique ipsa! Ipsa delectus repellat laudantium debitis, deleniti dolorum? Ab enim saepe doloremque quasi repudiandae odit cupiditate, fugit, quia mollitia, nostrum quam exercitationem voluptatem laudantium ipsum tenetur possimus!</p>
+      <p>Aperiam laborum dolorum fuga in dicta, deserunt voluptatibus officiis placeat provident totam ad reprehenderit enim nesciunt amet quasi atque rerum. Nihil aperiam quod perferendis veritatis vero, aut ex, dolor reiciendis?</p>
+    </article>
+    <article class="letter-spacing">
+      <h2>letter-spacing, word-spacing</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed exercitationem tempore molestias aperiam et vel possimus dolores ducimus modi eos dolor qui itaque quod, maxime architecto praesentium, magnam excepturi eligendi.</p>
+      <p>Asperiores facere, similique ipsa! Ipsa delectus repellat laudantium debitis, deleniti dolorum? Ab enim saepe doloremque quasi repudiandae odit cupiditate, fugit, quia mollitia, nostrum quam exercitationem voluptatem laudantium ipsum tenetur possimus!</p>
+      <p>Aperiam laborum dolorum fuga in dicta, deserunt voluptatibus officiis placeat provident totam ad reprehenderit enim nesciunt amet quasi atque rerum. Nihil aperiam quod perferendis veritatis vero, aut ex, dolor reiciendis?</p>
+    </article>
+  </main>
+</body>
+
+</html>
