@@ -97,10 +97,59 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0 1em;
+}
 
+form {
+  max-width: 40em;
+  background: rgb(255, 0, 0, .0625);
+}
 
+fieldset {
+  padding: 1em;
+  margin: 1em 0;
+  background: rgb(255, 0, 0, .0625);
+}
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  background: rgb(255, 0, 0, .5);
+  border: 1px solid red;
+  border-radius: 2em;
+  padding: 0 1em;
+}
 
+fieldset fieldset legend {
+  font-size: 1.25em;
+}
+
+form div[class*="container"] {
+  margin: 1em 0;
+}
+
+label {
+  display: block;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="number"]):not([pattern]) {
+  padding: .25em;
+  width: 100%;
+}
+
+form div[class*="radio-container"] label {
+  display: inline-block;
+}
+
+input[type="number"],
+input[pattern] {
+  width: 7em;
+}
 
 
 

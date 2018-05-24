@@ -31,7 +31,7 @@
   <form action="#">
     <!-- I made the experience that for nearly any layout you need a container
         for label and input to achieve design goals -->
-        <p>The fields with an asterisk (*) are required fields</p>
+    <p>The fields with an asterisk (*) are required fields</p>
     <fieldset>
       <legend>Personal Data</legend>
       <div class="text-container">
@@ -53,26 +53,35 @@
             and software easier to understand web forms -->
         <legend>Please tell us your gender</legend>
         <div class="radio-container">
-          <!-- a label logically connected to the radio button -->
-          <label for="male">male</label>
           <!-- A radio button -->
           <input id="male" type="radio" name="sex">
+          <!-- a label logically connected to the radio button -->
+          <label for="male">male</label>
         </div>
         <div class="radio-container">
-          <label for="female">female</label>
           <input id="female" type="radio" name="sex">
+          <label for="female">female</label>
         </div>
       </fieldset>
       <div class="number-container">
         <label for="age">age</label>
         <!-- a field of type number only accepts natural numbers -->
-        <input id="age" type="number">
+        <input id="age" type="number" min="0" max="150">
       </div>
     </fieldset>
-     <fieldset>
-     <legend>Contact Data</legend>
-       <fieldset>
-       <legend>Address</legend>
+    <fieldset>
+      <legend>Contact Data</legend>
+      <fieldset>
+        <legend>Postal Address</legend>
+        <div class="select-container">
+          <label for="state">Federal state (select one or more items)</label>
+          <select multiple>
+            <option value="bw">Baden-Württemberg</option>
+            <option value="by">Bayern</option>
+            <option value="hh">Hamburg</option>
+            <option value="nrw">Nordrhein Westfalen</option>
+          </select>
+        </div>
         <div class="text-container">
           <label for="street">street</label>
           <input id="street">
@@ -97,7 +106,7 @@
           <label for="city">city</label>
           <input id="city">
         </div>
-     </fieldset>
+      </fieldset>
       <div class="email-container">
         <label for="email">email</label>
         <!-- when u use fild of type email, the browser checks if the text inside could be an email address -->
@@ -106,14 +115,15 @@
     </fieldset>
     <div class="textarea-container">
       <label for="message">your message for us</label>
-      <textarea>
+      <textarea id="message">
         </textarea>
-      <button type="submit">Send</button>
     </div>
+    <button type="submit">Send</button>
   </form>
 
   <!-- Add your site or application content here -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
 </body>
+
 </html>
