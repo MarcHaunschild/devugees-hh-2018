@@ -6,6 +6,20 @@
   <title>Day 7 - Text and Font Formatting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <style>
+    body {
+      hyphens: auto;
+    }
+
+    svg {
+      height: 1em;
+      width: auto;
+      fill: currentColor;
+    }
+
+    .arrow-down {
+      fill: blue;
+    }
+
     .font-family {
       font-family: Helvetica, Arial, 'Lucida sans', sans-serif;
       font-size: 1.25em;
@@ -41,11 +55,11 @@
     }
 
     .text-transform p:first-of-type {
-      text-transform:uppercase;
+      text-transform: uppercase;
     }
 
     .text-transform p:nth-of-type(2) {
-      text-transform:lowercase;
+      text-transform: lowercase;
     }
 
     .text-transform p:nth-of-type(3) {
@@ -74,7 +88,6 @@
       background: lime;
     }
 */
-
   </style>
 </head>
 
@@ -90,7 +103,12 @@
       <li>text-decoration</li>
       <li>text-transform</li>
     </ul>
-    <p><a href="https://www.youtube.com/embed/NM2qmIPSuOg" target="_new">Chris Coyier talking Icon Fonts vs SVG (links leads you to YouTube. YouTube collects your data!)</a></p>
+    <h3>SVG and Icon-Fonts</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=XOs0KsFEN_k">Video: Getting started with Font Awesome 5</a></li>
+      <li><a href="https://www.youtube.com/embed/NM2qmIPSuOg" target="_new">Chris Coyier talking Icon Fonts vs SVG (links leads you to YouTube. YouTube collects your data!)</a></li>
+      <li><a href="https://css-tricks.com/?s=svg&orderby=relevance&post_type=post%2Cpage%2Cguide">Articles about SVG on CSS Tricks</a></li>
+    </ul>
   </header>
   <main>
     <article>
@@ -130,7 +148,8 @@
     </article>
     <article class="text-decoration">
       <h2>text-decoration</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vitae explicabo natus facilis incidunt vel non impedit numquam accusamus optio earum, delectus eum, ipsum facere, veritatis assumenda, reiciendis nulla magni.</p>
+      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M125.1 208h197.8c10.7 0 16.1 13 8.5 20.5l-98.9 98.3c-4.7 4.7-12.2 4.7-16.9 0l-98.9-98.3c-7.7-7.5-2.3-20.5 8.4-20.5zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-48 346V86c0-3.3-2.7-6-6-6H54c-3.3 0-6 2.7-6 6v340c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>
+      <p>Urinstinkt Donau&shy;dampf&shy;schiff&shy;fahrts&shy;gesellschaft Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vitae explicabo natus facilis incidunt vel non impedit numquam accusamus optio earum, delectus eum, ipsum facere, veritatis assumenda, reiciendis nulla magni.</p>
       <p>Illo optio assumenda, natus nostrum est vero odio. Ea laudantium eaque officiis minima placeat tempore illum perferendis minus, fuga, esse? Aliquid aperiam assumenda blanditiis sunt voluptates quasi nulla velit totam.</p>
       <p>Dolore cupiditate quae soluta fuga repellat, eligendi illo! Odio doloremque, eveniet. Sunt rerum natus illum aperiam, modi tempore, magnam, ex deserunt atque omnis hic tenetur nesciunt incidunt consequuntur rem vero.</p>
     </article>
@@ -145,6 +164,18 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed exercitationem tempore molestias aperiam et vel possimus dolores ducimus modi eos dolor qui itaque quod, maxime architecto praesentium, magnam excepturi eligendi.</p>
       <p>Asperiores facere, similique ipsa! Ipsa delectus repellat laudantium debitis, deleniti dolorum? Ab enim saepe doloremque quasi repudiandae odit cupiditate, fugit, quia mollitia, nostrum quam exercitationem voluptatem laudantium ipsum tenetur possimus!</p>
       <p>Aperiam laborum dolorum fuga in dicta, deserunt voluptatibus officiis placeat provident totam ad reprehenderit enim nesciunt amet quasi atque rerum. Nihil aperiam quod perferendis veritatis vero, aut ex, dolor reiciendis?</p>
+      Ms Abrams was raised in Gulfport, Mississippi, with her five siblings.
+
+      <p>She moved to Atlanta as a teenager with her parents, a college librarian and shipyard worker who both attended Emory University to study divinity and become United Methodist ministers.</p>
+
+      <p>It was in Georgia where she made her mark with a number of historic achievements.</p>
+
+      <p>She became the first African American female valedictorian of her high school before earning her undergraduate degree from Spelman College. She also received a master's degree from the University of Texas and a law degree from Yale University.</p>
+
+      <p>Ms Abrams was first elected to the Georgia state House of Representatives in 2006, and would later become the first woman to lead either party in the Georgia General Assembly as well as the first African American to lead the state's House of Representatives.</p>
+      <p>She has been considered a rising star among her party's progressive wing, taking centre stage at the 2016 Democratic National Convention.</p>
+
+      <p>She gave a rousing speech on economic inequality, drawing on her own experience, and strongly backing presidential nominee Hillary Clinton.</p>
     </article>
   </main>
 </body>
