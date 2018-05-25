@@ -3,12 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Day 7 - Text and Font Formatting</title>
+  <title>Day 7 - SVG, Iconfonts and Text Formatting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <style>
     body {
       hyphens: auto;
     }
+
+    aside {
+      margin: 2em 1em;
+      border-radius: .75em;
+      padding: 1em;
+      overflow: auto;
+      background: #eee;
+      box-shadow: 0 .5em .5em .25em #ccc;
+    }
+    code {
+      color: blue;
+      background: white;
+      padding: .0625em .25em;
+      border-radius: .75em;
+    }
+
 
     svg {
       height: 1em;
@@ -110,7 +126,18 @@
       <li><a href="https://css-tricks.com/?s=svg&orderby=relevance&post_type=post%2Cpage%2Cguide">Articles about SVG on CSS Tricks</a></li>
     </ul>
   </header>
+
   <main>
+  <aside>
+    <p>Accessible SVG</p>
+    <p>So, to ensure the AT can access the <code>&lt;title&gt;</code> and <code>&lt;desc&gt;</code>:</p>
+    <p>Add the appropriate ID’s to the &lt;title&gt; and &lt;desc&gt;:</p>
+    <pre><ol><li>&lt;title id="uniqueTitleID"&gt;The title of the SVG&lt;/title&gt;</li><li>&lt;desc id="uniqueDescID"&gt;A longer, more complete description for complex graphics.&lt;/desc&gt;</li></ol></pre>
+    <p>On the <code>&lt;svg&gt;</code> tag, add: <code>aria-labelledby="uniqueTitleID uniqueDescID"</code> (use the <code>title</code> and <code>desc</code> ID’s) - both <code>title</code> and <code>description</code> are included in <code>aria-labelledby</code> because it has better screen-reader support than <code>aria-describedby</code></p>
+    <p>One more thing: On the <code>&lt;svg&gt;</code> tag, add: <code>role="img"</code> (so that the SVG is not traversed by browsers that map the SVG to the group role)</p>
+    <p><i><a href="https://css-tricks.com/accessible-svgs/">Chris Coyier at CSS-Tricks</a></i></p>
+  </aside>
+
     <article>
       <h2>Intro</h2>
       <h3>Useful links</h3>
