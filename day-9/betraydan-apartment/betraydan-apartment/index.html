@@ -54,12 +54,11 @@
         <fieldset>
           <legend>Price Range</legend>
           <div class="range-container">
-            <label for="price-range" class="visuallyhidden">
-            How much are you willing to pay?
-          </label>
             <input id="price-range" type="range">
-            <span class="min-price"><span class="visuallyhidden">from </span>80 $</span>
-            <span class="max-price"><span class="visuallyhidden">to </span>1200 $</span>
+            <label for="price-range">
+              <span class="min-price"><span class="visuallyhidden">from </span>80 $</span>
+              <span class="max-price"><span class="visuallyhidden">to </span>1200 $</span>
+            </label>
           </div>
         </fieldset>
         <fieldset>
@@ -89,16 +88,16 @@
           </div>
           <fieldset>
             <div class="checkbox-container">
-              <label for="">
+              <input type="checkbox" id="pool">
+              <label for="pool">
             Swimming Pool
           </label>
-              <input type="checkbox">
             </div>
             <div class="checkbox-container">
-              <label for="">
+              <input type="checkbox" id="fireplace">
+              <label for="fireplace">
             Fireplace
           </label>
-              <input type="checkbox">
             </div>
           </fieldset>
         </fieldset>
@@ -117,20 +116,22 @@
       </header>
 
       <p class="city">
-      <svg role="presentation" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-        <path d="M0 0h24v24H0z" fill="none"/>
-      </svg>
-     Barcelona</p>
+        <a href="#">
+         <svg role="presentation" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+        <span class="visuallyhidden">show all Apartments in </span>Barcelona</a>
+      </p>
       <h2>Charming &amp; Very Spacious</h2>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis magnam inventore magni possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis magnam inventore magni possimus.</p>
       <p>
         <img src="img/sheep.jpg" alt="Host Image" height="100">
         <span>Hosted by</span>
         <span>Carla Poala</span>
       </p>
-      <a href="#">
+      <a href="#" class="booking-cta">
         Request to book
         <svg role="presentation" fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h24v24H0z" fill="none"/>
